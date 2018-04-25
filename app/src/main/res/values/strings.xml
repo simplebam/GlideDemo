@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GlideDemo</string>
+    <string name="load">加载</string>
+    <string name="title_chapter1">第一章</string>
+    <string name="title_chapter2">第二章</string>
+    <string name="title_chapter3">第三章</string>
+    <string name="title_chapter4">第四章</string>
+    <string name="title_chapter5">第五章</string>
+    <string name="title_chapter6">第六章</string>
+    <string name="title_chapter7">第七章</string>
+    <string name="title_chapter8">第八章</string>
+    <string name="title_chapter9">第九章</string>
+    <string name="load_error">加载失败</string>
+</resources>
