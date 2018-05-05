@@ -1,7 +1,7 @@
 ## GlideDemo
 
 本项目主要以郭霖先生的 [Android图片加载框架最全解析（一），Glide的基本用法 - CSDN博客 ](https://blog.csdn.net/guolin_blog/article/details/53759439?utm_source=tuicool&utm_medium=referral)
-这一系列的 Glide 文章为基础的
+这一系列的 Glide 文章为基础的Demo
 
 
 ### 项目截图
@@ -91,8 +91,6 @@ App体验地址：
 * Glide
   * [Android图片加载框架最全解析（一），Glide的基本用法 - 郭霖的专栏](http://blog.csdn.net/guolin_blog/article/details/53759439)
     郭霖写的东西都很赞,值得推荐阅读
-  * [Google推荐的图片加载库Glide介绍 - 泡在网上的日子](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0327/2650.html)
-  * [Glide 一个专注于平滑滚动的图片加载和缓存库 - 简书](https://www.jianshu.com/p/4a3177b57949)
   * [Glide V4 框架新特性（Migrating from v3 to v4） - HeXinGen的博客 - CSDN博客](http://blog.csdn.net/hexingen/article/details/72578066)
 * glide-transformations
   * 网上出现了很多Glide的图片变换开源库，其中做的最出色的应该要数glide-transformations这个库了

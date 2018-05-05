@@ -1,7 +1,7 @@
 # GlideDemo
 
 本项目主要以郭霖先生的 [Android图片加载框架最全解析（一），Glide的基本用法 - CSDN博客 ](https://blog.csdn.net/guolin_blog/article/details/53759439?utm_source=tuicool&utm_medium=referral)
-这一系列的 Glide 文章为基础的
+这一系列的 Glide 文章为基础的Demo
 
 ## 项目亮点
 *

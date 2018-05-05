@@ -26,7 +26,8 @@ import io.reactivex.disposables.Disposable;
 
 /**
  * author : yueyue on 2018/4/21 20:53
- * desc   :
+ * desc   : Android图片加载框架最全解析（一），Glide的基本用法 - CSDN博客
+ * <p>https://blog.csdn.net/guolin_blog/article/details/53759439</p>
  */
 public class Chapter1_Fragment extends BaseFragment {
 
@@ -49,17 +50,17 @@ public class Chapter1_Fragment extends BaseFragment {
                 .fetchYingPic(random, 1)
                 .subscribe(yingPic -> {
                             Context context = getContext() == null ? App.getContext() : getContext();
-                            RequestOptions options = RequestOptions
-                                    .placeholderOf(R.drawable.placeholder)
-                                    .error(R.drawable.ying_default);
+                            RequestOptions options = new RequestOptions()
+                                    .placeholder(R.drawable.placeholder)
+                                    .error(R.drawable.error);
                             Glide.with(context).load(YingApi.HOST + yingPic.url).apply(options).into(mIvImage);
 
                             changeSwipeRefreshState(false);
                         },
                         throwable -> {
                             changeSwipeRefreshState(false);
-                            Log.e(TAG, "load: " + throwable.toString());
                             ToastUtil.showShort(R.string.load_error);
+                            Log.e(TAG, "load: " + throwable.toString());
                         });
         mCompositeDisposable.add(disposable);
 
@@ -85,6 +86,7 @@ public class Chapter1_Fragment extends BaseFragment {
         GradientDrawable gd = new GradientDrawable();
         gd.setCornerRadius(ConvertUtil.dp2px(2));
         gd.setColor(getResources().getColor(R.color.color_d6d7d7));
+
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
             mBtnRequest.setBackgroundDrawable(gd);
         } else {

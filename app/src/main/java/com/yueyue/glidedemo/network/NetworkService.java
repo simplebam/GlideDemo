@@ -32,14 +32,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NetworkService {
     private static final String TAG = NetworkService.class.getSimpleName();
 
-    private static YingApi yingApi = null;
+    private static YingApi sYingApi = null;
     private static Retrofit sRetrofit = null;
     private static OkHttpClient sOkHttpClient = null;
 
     private void init() {
         initOkHttp();
         initRetrofit();
-        yingApi = sRetrofit.create(YingApi.class);
+        sYingApi = sRetrofit.create(YingApi.class);
     }
 
     private NetworkService() {
@@ -124,23 +124,23 @@ public class NetworkService {
      * @param number 请求图片的数量
      */
     public Observable<YingPic> fetchYingPic(int idx, int number) {
-        return yingApi.getimages(Constant.YING_FORMAT, idx, number)
+        return sYingApi.getimages(Constant.YING_FORMAT, idx, number)
                 .map(yingPicResult -> yingPicResult.images.get(0))
                 .compose(RxUtil.io());
     }
 
 
 //    public static YingApi getYingApi() {
-//        if (yingApi == null) {
+//        if (sYingApi == null) {
 //            Retrofit retrofit = new Retrofit.Builder()
 //                    .client(okHttpClient)
 //                    .baseUrl(YingApi.HOST)
 //                    .addConverterFactory(gsonConverterFactory)
 //                    .addCallAdapterFactory(rxJavaCallAdapterFactory)
 //                    .build();
-//            yingApi = retrofit.create(YingApi.class);
+//            sYingApi = retrofit.create(YingApi.class);
 //        }
-//        return yingApi;
+//        return sYingApi;
 //    }
 
 }
