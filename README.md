@@ -16,9 +16,10 @@
 
 App体验地址：
 
-
+如果你还没有熟悉RxJava的用法,请看这里:[simplebam/RxJavaDemo 本教程基于 RxJava2 实践练习Demo ](https://github.com/simplebam/RxJavaDemo)
 
 ### 推荐-推荐的不仅仅是技术
+* [simplebam/RxJavaDemo 本教程基于 RxJava2 实践练习Demo ](https://github.com/simplebam/RxJavaDemo)
 * [Google推荐的图片加载库Glide介绍 - 泡在网上的日子 ](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0327/2650.html)
 * [Java获取必应每日一图教程 - CSDN博客 ](https://blog.csdn.net/simplebam/article/details/72819547)
 

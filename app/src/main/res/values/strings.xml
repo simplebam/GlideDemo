@@ -26,4 +26,6 @@
     <string name="load_picture_and_data">加载回来的%1$s体积：%2$d</string>
     <string name="glide_file_size">Glide文件大小</string>
     <string name="warm_tip_chapter3">这里主要通过Glide缓存文件夹的大小来判断Glide是否请求网络,这里仅仅加载七牛云的一张照片</string>
+    <string name="download_only">DownloadOnly</string>
+    <string name="listener">Listener</string>
 </resources>

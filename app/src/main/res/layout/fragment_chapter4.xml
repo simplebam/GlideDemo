@@ -8,6 +8,7 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -44,7 +45,44 @@
                 android:textSize="16sp"
                 tools:ignore="ButtonStyle"/>
 
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_download_only"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/color_d6d7d7"
+                android:padding="5dp"
+                android:text="@string/download_only"
+                android:textAllCaps="false"
+                android:textColor="@color/color_000000"
+                android:textSize="16sp"
+                tools:ignore="ButtonStyle"/>
+
+            <Button
+                android:id="@+id/btn_listener"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_d6d7d7"
+                android:padding="5dp"
+                android:text="@string/listener"
+                android:textAllCaps="false"
+                android:textColor="@color/color_000000"
+                android:textSize="16sp"
+                tools:ignore="ButtonStyle"/>
+
+        </LinearLayout>
+
 
         <ImageView
             android:id="@+id/iv_image"
@@ -55,10 +93,10 @@
             android:contentDescription="@string/app_name"/>
 
         <com.yueyue.glidedemo.module.chapter_4.MyLinearLayout
-            android:layout_gravity="center"
             android:id="@+id/ll_linear_layout"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@android:color/transparent"
             android:contentDescription="@string/app_name"/>

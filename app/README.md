@@ -10,6 +10,7 @@
 
 App体验地址：
 
+如果你还没有熟悉RxJava的用法,请看这里:[simplebam/RxJavaDemo 本教程基于 RxJava2 实践练习Demo ](https://github.com/simplebam/RxJavaDemo)
 
 
 ### 项目中用到的知识
