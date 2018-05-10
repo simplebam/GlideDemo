@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GlideDemo</string>
     <string name="load">加载</string>
+    <string name="load_error">加载失败</string>
     <string name="title_chapter1">第一章</string>
     <string name="title_chapter2">第二章</string>
     <string name="title_chapter3">第三章</string>
@@ -10,5 +11,17 @@
     <string name="title_chapter7">第七章</string>
     <string name="title_chapter8">第八章</string>
     <string name="title_chapter9">第九章</string>
-    <string name="load_error">加载失败</string>
+
+    <string name="api_source_chapter2">* <b>Android图片加载框架最全解析（二），从源码的角度理解Glide的执行流程 - CSDN博客 :</b>   https://blog.csdn.net/guolin_blog/article/details/53939176 </string>
+    <string name="dialog_chapter2">虽然Glide仅仅是\n Glide.with(this) \n&#160;&#160;&#160;&#160;.load(url) \n&#160;&#160;&#160;&#160;.into(imageView);\n 但Glide在背后帮我们默默执行了成吨的工作。(我查到的英文资料是用tons of work来进行形容的，因此我觉得这里使用成吨来形容更加贴切一些。)</string>
+    <string name="tip">提示</string>
+    <string name="title_complete">总结</string>
+    <string name="sure">确认</string>
+    <string name="source_tip">源码技巧</string>
+    <string name="dialog_source_chapter2">\n在开始解析Glide源码之前，我想先和大家谈一下该如何阅读源码，这个问题也是我平时被问得比较多的，因为很多人都觉得阅读源码是一件比较困难的事情。  那么阅读源码到底困难吗？这个当然主要还是要视具体的源码而定。比如同样是图片加载框架，我读Volley的源码时就感觉酣畅淋漓，并且对Volley的架构设计和代码质量深感佩服。读Glide的源码时却让我相当痛苦，代码极其难懂。当然这里我并不是说Glide的代码写得不好，只是因为Glide和复杂程度和Volley完全不是在一个量级上的。  那么，虽然源码的复杂程度是外在的不可变条件，但我们却可以通过一些技巧来提升自己阅读源码的能力。这里我和大家分享一下我平时阅读源码时所使用的技巧，简单概括就是八个字：抽丝剥茧、点到即止。应该认准一个功能点，然后去分析这个功能点是如何实现的。但只要去追寻主体的实现逻辑即可，千万不要试图去搞懂每一行代码都是什么意思，那样很容易会陷入到思维黑洞当中，而且越陷越深。因为这些庞大的系统都不是由一个人写出来的，每一行代码都想搞明白，就会感觉自己是在盲人摸象，永远也研究不透。如果只是去分析主体的实现逻辑，那么就有比较明确的目的性，这样阅读源码会更加轻松，也更加有成效。</string>
+    <string name="how_to_read_source">如何阅读源码</string>
+    <string name="simple_target">SimpleTarget</string>
+    <string name="view_target">ViewTarget</string>
+    <string name="load_picture_and_data">加载回来的%1$s体积：%2$d</string>
+    <string name="glide_file_size">Glide文件大小</string>
 </resources>

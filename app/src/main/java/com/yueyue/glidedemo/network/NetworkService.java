@@ -5,6 +5,7 @@ import android.util.Log;
 import com.yueyue.glidedemo.base.App;
 import com.yueyue.glidedemo.base.Constant;
 import com.yueyue.glidedemo.model.YingPic;
+import com.yueyue.glidedemo.network.api.QiNiuPic;
 import com.yueyue.glidedemo.network.api.YingApi;
 import com.yueyue.glidedemo.utils.RxUtil;
 import com.yueyue.glidedemo.utils.ToastUtil;
@@ -32,9 +33,11 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NetworkService {
     private static final String TAG = NetworkService.class.getSimpleName();
 
-    private static YingApi sYingApi = null;
     private static Retrofit sRetrofit = null;
     private static OkHttpClient sOkHttpClient = null;
+
+    private static YingApi sYingApi = null;
+    private static QiNiuPic sQiNiuPic = null;
 
     private void init() {
         initOkHttp();
@@ -124,6 +127,9 @@ public class NetworkService {
      * @param number 请求图片的数量
      */
     public Observable<YingPic> fetchYingPic(int idx, int number) {
+        if (sYingApi==null) {
+            sYingApi = sRetrofit.create(YingApi.class);
+        }
         return sYingApi.getimages(Constant.YING_FORMAT, idx, number)
                 .map(yingPicResult -> yingPicResult.images.get(0))
                 .compose(RxUtil.io());

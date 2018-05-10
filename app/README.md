@@ -1,7 +1,8 @@
 ## GlideDemo
-
 本项目主要以郭霖先生的 [Android图片加载框架最全解析（一），Glide的基本用法 - CSDN博客 ](https://blog.csdn.net/guolin_blog/article/details/53759439?utm_source=tuicool&utm_medium=referral)
 这一系列的 Glide 文章为基础的Demo
+* 辅助源码文章:[【两篇就懂系列】Glide源码分析之加载图片流程(1/2) - 简书 ](https://www.jianshu.com/p/3bb4977ceb83)
+* 辅助源码文章:[深入理解Glide | Jiantao ](https://yangjiantao.github.io/2017/10/25/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Glide/#more)
 
 
 ### 项目截图
@@ -85,6 +86,9 @@ App体验地址：
   * [Git教程 - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
       ,我更愿意推荐他的,通俗易懂,我建议可以配合[Pro Git（中文版）](http://git.oschina.net/progit/)一起看效果更佳
   * [github release 功能的使用及问题解决 - Eggy2015的博客 - CSDN博客](http://blog.csdn.net/Eggy2015/article/details/52138751)
+* 时间戳
+  * 定义:[程序员的日常：时间戳和时区的故事| 编程派 | Coding Python ](http://codingpy.com/article/programmer-daily-story-about-timestamp-and-timezone/)
+  * [JAVA获取时间戳，哪个更快 - 潇湘客 - ITeye博客 ](http://tangmingjie2009.iteye.com/blog/1543166)
 
 
 ### 项目中用到的框架

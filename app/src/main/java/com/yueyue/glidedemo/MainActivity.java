@@ -10,6 +10,9 @@ import android.support.v4.view.ViewPager;
 import com.yueyue.glidedemo.base.BaseActivity;
 import com.yueyue.glidedemo.base.BaseFragment;
 import com.yueyue.glidedemo.module.chapter_1.Chapter1_Fragment;
+import com.yueyue.glidedemo.module.chapter_2.Chapter2_Fragment;
+import com.yueyue.glidedemo.module.chapter_3.Chapter3_Fragment;
+import com.yueyue.glidedemo.module.chapter_4.Chapter4_Fragment;
 
 import java.util.ArrayList;
 
@@ -24,8 +27,11 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.view_pager)
     ViewPager viewPager;
 
-    private ArrayList<BaseFragment> fragmentList = new ArrayList<BaseFragment>(6){{
+    private ArrayList<BaseFragment> fragmentList = new ArrayList<BaseFragment>(6) {{
         add(Chapter1_Fragment.launch());
+        add(Chapter2_Fragment.launch());
+        add(Chapter3_Fragment.launch());
+        add(Chapter4_Fragment.launch());
     }};
 
 
@@ -52,19 +58,11 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public int getCount() {
-                //默认有一个 Chapter1_Fragment
                 return fragmentList.size();
             }
 
             @Override
             public Fragment getItem(int position) {
-                if (fragmentList.size() == 0) {
-                    //默认加载 Chapter1_Fragment
-                    Chapter1_Fragment fragment = Chapter1_Fragment.launch();
-                    fragmentList.add(R.string.title_chapter1, fragment);
-                    return fragment;
-                }
-
                 return fragmentList.get(position);
             }
 
@@ -73,16 +71,22 @@ public class MainActivity extends BaseActivity {
                 switch (position) {
                     case 0:
                         return getString(R.string.title_chapter1);
-//                    case 1:
-//                        return getString(R.string.title_map);
-//                    case 2:
-//                        return getString(R.string.title_zip);
-//                    case 3:
-//                        return getString(R.string.title_token);
-//                    case 4:
-//                        return getString(R.string.title_token_advanced);
-//                    case 5:
-//                        return getString(R.string.title_cache);
+                    case 1:
+                        return getString(R.string.title_chapter2);
+                    case 2:
+                        return getString(R.string.title_chapter3);
+                    case 3:
+                        return getString(R.string.title_chapter4);
+                    case 4:
+                        return getString(R.string.title_chapter5);
+                    case 5:
+                        return getString(R.string.title_chapter6);
+                    case 6:
+                        return getString(R.string.title_chapter7);
+                    case 7:
+                        return getString(R.string.title_chapter8);
+                    case 8:
+                        return getString(R.string.title_chapter9);
                     default:
                         return getString(R.string.title_chapter1);
                 }
