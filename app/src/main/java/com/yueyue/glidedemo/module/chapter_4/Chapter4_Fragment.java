@@ -47,8 +47,11 @@ public class Chapter4_Fragment extends BaseFragment {
     @BindView(R.id.btn_view_target)
     Button mBtnViewTarget;
 
+    @BindView(R.id.ll_linear_layout)
+    MyLinearLayout mMyLinearLayout;
+
     @OnClick(R.id.btn_simple_target)
-    void loadSimple() {
+    void load2Simple() {
         unsubscribe();
         changeSwipeRefreshState(true);
 
@@ -56,8 +59,23 @@ public class Chapter4_Fragment extends BaseFragment {
         Disposable disposable = NetworkService.getInstance()
                 .fetchYingPic(random, 1)
                 .subscribe(yingPic -> {
-                            String picUrl = YingApi.HOST + yingPic.url;
-                            loadImage(picUrl);
+
+                            Context context = getContext() == null ? App.getContext() : getContext();
+
+                            RequestOptions options = new RequestOptions()
+                                    .placeholder(R.drawable.placeholder)
+                                    .error(R.drawable.error);
+                            //Glide4版本之后的asBitmap()必须要在load()之前,之前版本都是asBitmap()在load()之后
+                            Glide.with(context).asBitmap().load(YingApi.HOST + yingPic.url).apply(options)
+                                    .into(new SimpleTarget<Bitmap>() {
+                                        @Override
+                                        public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+                                            //当使用SimpleTarget<Bitmap>的泛型为Bitmap,需要指定加载图片的加载类型为Bitmap,即调用asBitmap()
+                                            mIvImage.setImageBitmap(resource);
+                                            String DrawableClazzName = resource.getClass().getSimpleName();
+                                            ToastUtil.showShort(TAG + getString(R.string.load_picture_and_data, DrawableClazzName, resource.getByteCount()));
+                                        }
+                                    });
 
                             changeSwipeRefreshState(false);
                         },
@@ -70,26 +88,35 @@ public class Chapter4_Fragment extends BaseFragment {
 
     }
 
-    private void loadImage(String picUrl) {
-        Context context = getContext() == null ? App.getContext() : getContext();
+    @OnClick(R.id.btn_view_target)
+    void load2View() {
+        unsubscribe();
+        changeSwipeRefreshState(true);
 
-        RequestOptions options = new RequestOptions()
-                .placeholder(R.drawable.placeholder)
-                .error(R.drawable.error);
-        //Glide4版本之后的asBitmap()必须要在load()之前,之前版本都是asBitmap()在load()之后
-        Glide.with(context)
-                .asBitmap()
-                .load(picUrl)
-                .apply(options)
-                .into(new SimpleTarget<Bitmap>() {
-                    @Override
-                    public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
-                        //当使用SimpleTarget<Bitmap>的泛型为Bitmap,需要指定加载图片的加载类型为Bitmap,即调用asBitmap()
-                        mIvImage.setImageBitmap(resource);
-                        String DrawableClazzName = resource.getClass().getSimpleName();
-                        ToastUtil.showShort(TAG + getString(R.string.load_picture_and_data, DrawableClazzName, resource.getByteCount()));
-                    }
-                });
+        int random = new Random().nextInt(10) + 1;
+        Disposable disposable = NetworkService.getInstance()
+                .fetchYingPic(random, 1)
+                .subscribe(yingPic -> {
+
+                            Context context = getContext() == null ? App.getContext() : getContext();
+
+                            RequestOptions options = new RequestOptions()
+                                    .placeholder(R.drawable.placeholder)
+                                    .error(R.drawable.error);
+                            //Glide4版本之后的asBitmap()必须要在load()之前,之前版本都是asBitmap()在load()之后
+                            Glide.with(context)
+                                    .load(YingApi.HOST + yingPic.url)
+                                    .apply(options)
+                                    .into(mMyLinearLayout.getTarget());
+
+                            changeSwipeRefreshState(false);
+                        },
+                        throwable -> {
+                            changeSwipeRefreshState(false);
+                            ToastUtil.showShort(R.string.load_error);
+                            Log.e(TAG, "load: " + throwable.toString());
+                        });
+        mCompositeDisposable.add(disposable);
     }
 
 
@@ -124,7 +151,7 @@ public class Chapter4_Fragment extends BaseFragment {
 
     @Override
     protected void initData() {
-        loadSimple();
+        load2Simple();
     }
 
 

@@ -53,5 +53,14 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/transparent"
             android:contentDescription="@string/app_name"/>
+
+        <com.yueyue.glidedemo.module.chapter_4.MyLinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/ll_linear_layout"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"/>
     </LinearLayout>
 </android.support.v4.widget.SwipeRefreshLayout>
