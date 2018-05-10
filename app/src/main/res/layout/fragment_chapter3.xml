@@ -18,6 +18,20 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_tip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/color_d6d7d7"
+                android:padding="5dp"
+                android:text="@string/tip"
+                android:textAllCaps="false"
+                android:textColor="@color/color_000000"
+                android:textSize="16sp"
+                tools:ignore="ButtonStyle"/>
+
+            <Button
                 android:id="@+id/btn_request"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -50,10 +64,20 @@
             android:id="@+id/iv_image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="184dp"
             android:layout_marginTop="10dp"
             android:background="@android:color/transparent"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ying_default"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:background="@color/color_d6d7d7"
+            android:textAllCaps="false"
+            android:text="@string/warm_tip_chapter3"
+            android:textColor="@color/color_000000"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </android.support.v4.widget.SwipeRefreshLayout>

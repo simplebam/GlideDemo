@@ -82,14 +82,14 @@ public class Chapter4_Fragment extends BaseFragment {
                 .load(picUrl)
                 .apply(options)
                 .into(new SimpleTarget<Bitmap>() {
-            @Override
-            public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
-                //当使用SimpleTarget<Bitmap>的泛型为Bitmap,需要指定加载图片的加载类型为Bitmap,即调用asBitmap()
-                mIvImage.setImageBitmap(resource);
-                String DrawableClazzName = resource.getClass().getSimpleName();
-                ToastUtil.showShort(getString(R.string.load_picture_and_data, DrawableClazzName, resource.getByteCount()));
-            }
-        });
+                    @Override
+                    public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+                        //当使用SimpleTarget<Bitmap>的泛型为Bitmap,需要指定加载图片的加载类型为Bitmap,即调用asBitmap()
+                        mIvImage.setImageBitmap(resource);
+                        String DrawableClazzName = resource.getClass().getSimpleName();
+                        ToastUtil.showShort(TAG + getString(R.string.load_picture_and_data, DrawableClazzName, resource.getByteCount()));
+                    }
+                });
     }
 
 

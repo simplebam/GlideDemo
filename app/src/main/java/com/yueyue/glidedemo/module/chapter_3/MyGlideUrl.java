@@ -10,6 +10,8 @@ import com.bumptech.glide.load.model.GlideUrl;
  */
 public class MyGlideUrl extends GlideUrl {
 
+    private static final String TAG = MyGlideUrl.class.getSimpleName();
+
     private String mUrl;
 
     public MyGlideUrl(String url) {
@@ -19,39 +21,38 @@ public class MyGlideUrl extends GlideUrl {
 
     @Override
     public String getCacheKey() {
-        return mUrl
-                .replace(findTokenParam(), "")
-                .replace(findTimestampParam(), "");
+        String replacedTokenStr = mUrl.replace(findTokenParam(mUrl), "");
+        return replacedTokenStr.replace(findTimestampParam(replacedTokenStr), "");
     }
 
-    private String findTokenParam() {
+    private String findTokenParam(String matchStr) {
         //http://p8hz8s7pk.bkt.clouddn.com/qiniu_test.png?token=MY_ACCESS_KEY:v4x9pmncDMQ0JNFVOhvs&e=1525939113834
         String tokenParam = "";
-        int tokenKeyIndex = mUrl.indexOf("?token=") >= 0 ? mUrl.indexOf("?token=") : mUrl.indexOf("&token=");
+        int tokenKeyIndex = matchStr.contains("?token=") ? matchStr.indexOf("?token=") : matchStr.indexOf("&token=");
         if (tokenKeyIndex != -1) {
-            int nextAndIndex = mUrl.indexOf("&", tokenKeyIndex + 1);
+            int nextAndIndex = matchStr.indexOf("&", tokenKeyIndex + 1);
             if (nextAndIndex != -1) {
-                tokenParam = mUrl.substring(tokenKeyIndex + 1, nextAndIndex + 1);
+                tokenParam = matchStr.substring(tokenKeyIndex + 1, nextAndIndex + 1);
             } else {
-                tokenParam = mUrl.substring(tokenKeyIndex);
+                tokenParam = matchStr.substring(tokenKeyIndex);
             }
         }
         return tokenParam;
     }
 
-    private String findTimestampParam() {
-        //http://p8hz8s7pk.bkt.clouddn.com/qiniu_test.png?token=MY_ACCESS_KEY:v4x9pmncDMQ0JNFVOhvs&e=1525939113834
-        String tokenParam = "";
-        int tokenKeyIndex = mUrl.indexOf("?e=") >= 0 ? mUrl.indexOf("?e=") : mUrl.indexOf("&e=");
-        if (tokenKeyIndex != -1) {
-            int nextAndIndex = mUrl.indexOf("&", tokenKeyIndex + 1);
+    private String findTimestampParam(String matchStr) {
+        //http://p8hz8s7pk.bkt.clouddn.com/qiniu_test.png?e=1525939113834
+        String timestampParam = "";
+        int timestampKeyIndex = matchStr.contains("?e=") ? matchStr.indexOf("?e=") : matchStr.indexOf("&e=");
+        if (timestampKeyIndex != -1) {
+            int nextAndIndex = matchStr.indexOf("&", timestampKeyIndex + 1);
             if (nextAndIndex != -1) {
-                tokenParam = mUrl.substring(tokenKeyIndex + 1, nextAndIndex + 1);
+                timestampParam = matchStr.substring(timestampKeyIndex + 1, nextAndIndex + 1);
             } else {
-                tokenParam = mUrl.substring(tokenKeyIndex);
+                timestampParam = matchStr.substring(timestampKeyIndex);
             }
         }
-        return tokenParam;
+        return timestampParam;
     }
 
 }

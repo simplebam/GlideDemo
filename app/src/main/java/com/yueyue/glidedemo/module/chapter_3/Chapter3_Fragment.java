@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
+import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.request.RequestOptions;
 import com.yueyue.glidedemo.R;
 import com.yueyue.glidedemo.base.App;
@@ -53,9 +54,6 @@ public class Chapter3_Fragment extends BaseFragment {
         unsubscribe();
         changeSwipeRefreshState(true);
 
-        String realDownloadUrl = getQiNiuImageUrl();
-        Log.i(TAG, "load: " + realDownloadUrl);
-
         Disposable disposable = Observable.timer(1, TimeUnit.SECONDS)
                 .subscribeOn(AndroidSchedulers.mainThread())
                 .observeOn(Schedulers.io())
@@ -66,7 +64,11 @@ public class Chapter3_Fragment extends BaseFragment {
                             RequestOptions options = new RequestOptions()
                                     .placeholder(R.drawable.placeholder)
                                     .error(R.drawable.error);
-                            Glide.with(context).load(new MyGlideUrl(url)).apply(options).into(mIvImage);
+
+                            GlideUrl glideUrl = new MyGlideUrl(url);
+                            Glide.with(context).load(glideUrl).apply(options).into(mIvImage);
+
+                            getGlideFileSize();
 
                             changeSwipeRefreshState(false);
                         },
@@ -109,7 +111,13 @@ public class Chapter3_Fragment extends BaseFragment {
             e.printStackTrace();
         }
 
-        ToastUtil.showShort("当前Glide缓存大小:" + size);
+        ToastUtil.showShort("Chapter3_Fragment当前Glide缓存大小:" + size);
+    }
+
+
+    @OnClick(R.id.btn_tip)
+    void showTips() {
+        showDialog(R.layout.dialog_tip_chapter3, R.string.tip);
     }
 
     private void changeSwipeRefreshState(boolean swipeRefresh) {
