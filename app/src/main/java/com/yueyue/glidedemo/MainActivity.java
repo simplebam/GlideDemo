@@ -6,6 +6,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 
 import com.yueyue.glidedemo.base.BaseActivity;
 import com.yueyue.glidedemo.base.BaseFragment;
@@ -53,6 +54,11 @@ public class MainActivity extends BaseActivity {
 
     private void initToolBar() {
         setToolbarTitle(getString(R.string.app_name));
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar !=null) {
+            actionBar.setDisplayHomeAsUpEnabled(false);
+        }
     }
 
     private void initAdapter() {
