@@ -28,6 +28,7 @@ public class MyCircleCrop extends BitmapTransformation {
     private static final Lock BITMAP_DRAWABLE_LOCK = new ReentrantLock();
 
     /**
+     * Glide4.0使用浅解 - 简书 https://www.jianshu.com/p/ab97d6bda8ec
      * 使用Glide内置的TransformationUtils.circleCrop(pool, toTransform, outWidth, outHeight);也可以
      * @param pool        这个是Glide中的一个Bitmap缓存池，用于对Bitmap对象进行重用，否则每次图片变换都重新创建Bitmap对象将会非常消耗内存
      * @param toTransform 这个是原始图片的Bitmap对象，我们就是要对它来进行图片变换
@@ -75,7 +76,7 @@ public class MyCircleCrop extends BitmapTransformation {
             BITMAP_DRAWABLE_LOCK.unlock();
         }
 
-        //最后，尝试将复用的Bitmap对象重新放回到缓存池当中，
+        //最后，尝试将复用的Bitmap对象重新放回到缓存池当中
         if (toReuse != null && !toReuse.equals(toTransform)) {
             pool.put(toReuse);
         }
