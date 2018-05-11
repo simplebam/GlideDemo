@@ -13,8 +13,8 @@ import butterknife.OnClick;
 
 /**
  * author : yueyue on 2018/4/21 20:53
- * desc   : Android图片加载框架最全解析（一），Glide的基本用法 - CSDN博客
- * <p>https://blog.csdn.net/guolin_blog/article/details/53759439</p>
+ * desc   : Android图片加载框架最全解析（二），从源码的角度理解Glide的执行流程 - CSDN博客
+ * <p>https://blog.csdn.net/guolin_blog/article/details/53939176</p>
  */
 
 /**

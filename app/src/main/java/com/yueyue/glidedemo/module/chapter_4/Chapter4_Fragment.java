@@ -40,8 +40,8 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * author : yueyue on 2018/4/21 20:53
- * desc   : Android图片加载框架最全解析（一），Glide的基本用法 - CSDN博客
- * <p>https://blog.csdn.net/guolin_blog/article/details/53759439</p>
+ * desc   : Android图片加载框架最全解析（四），玩转Glide的回调与监听 - CSDN博客
+ * <p>https://blog.csdn.net/guolin_blog/article/details/70215985</p>
  */
 public class Chapter4_Fragment extends BaseFragment {
 

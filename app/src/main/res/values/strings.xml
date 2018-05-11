@@ -28,4 +28,8 @@
     <string name="warm_tip_chapter3">这里主要通过Glide缓存文件夹的大小来判断Glide是否请求网络,这里仅仅加载七牛云的一张照片</string>
     <string name="download_only">DownloadOnly</string>
     <string name="listener">Listener</string>
+    <string name="my_circle_crop">自定义变圆</string>
+    <string name="blur_transformations">模糊化</string>
+    <string name="grayscale_transformations">黑白化</string>
+    <string name="combination_transformations">组合变换</string>
 </resources>

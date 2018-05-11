@@ -13,6 +13,7 @@ import com.yueyue.glidedemo.module.chapter_1.Chapter1_Fragment;
 import com.yueyue.glidedemo.module.chapter_2.Chapter2_Fragment;
 import com.yueyue.glidedemo.module.chapter_3.Chapter3_Fragment;
 import com.yueyue.glidedemo.module.chapter_4.Chapter4_Fragment;
+import com.yueyue.glidedemo.module.chapter_5.Chapter5_Fragment;
 
 import java.util.ArrayList;
 
@@ -32,6 +33,7 @@ public class MainActivity extends BaseActivity {
         add(Chapter2_Fragment.launch());
         add(Chapter3_Fragment.launch());
         add(Chapter4_Fragment.launch());
+        add(Chapter5_Fragment.launch());
     }};
 
 
