@@ -7,10 +7,10 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:background="@color/color_d6d7d7"
                 android:padding="5dp"
                 android:text="@string/my_circle_crop"
@@ -32,10 +32,10 @@
                 tools:ignore="ButtonStyle"/>
 
             <Button
-                android:layout_marginRight="10dp"
                 android:id="@+id/btn_blur_transformations"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@color/color_d6d7d7"
                 android:padding="5dp"
@@ -46,10 +46,10 @@
                 tools:ignore="ButtonStyle"/>
 
             <Button
-                android:layout_marginRight="10dp"
                 android:id="@+id/btn_grayscale_transformations"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@color/color_d6d7d7"
                 android:padding="5dp"
@@ -63,7 +63,7 @@
                 android:id="@+id/btn_combination_transformations"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.2"
+                android:layout_weight="1"
                 android:background="@color/color_d6d7d7"
                 android:padding="5dp"
                 android:text="@string/combination_transformations"
