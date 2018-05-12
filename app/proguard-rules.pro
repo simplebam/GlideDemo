@@ -27,10 +27,18 @@
 -ignorewarnings
 
 
-# Glide
+#glide4.0 https://www.jianshu.com/p/f1f17f816d1d
 -keep public class * implements com.bumptech.glide.module.GlideModule
 -keep public class * extends com.bumptech.glide.AppGlideModule
 -keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
   **[] $VALUES;
   public *;
 }
+
+# for DexGuard only
+-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
+
+# 从glide4.0开始，GifDrawable没有提供getDecoder()方法，
+# 需要通过反射获取gifDecoder字段值，所以需要保持GifFrameLoader和GifState类不被混淆
+-keep class com.bumptech.glide.load.resource.gif.GifDrawable$GifState{*;}
+-keep class com.bumptech.glide.load.resource.gif.GifFrameLoader {*;}

@@ -26,6 +26,13 @@ App体验地址：
 * [我们要不要上线「个人app」 ？-玩Android - wanandroid.com ](http://www.wanandroid.com/blog/show/2127)
 * 根据郭神第七篇Glide文章做的:[crystalDf/GuoLin-Blog-20171026-GlideProgressTest ](https://github.com/crystalDf/GuoLin-Blog-20171026-GlideProgressTest)
   ,该项目存在的Bug:使用wifi网络加载不了图片,需要使用3g/4g网络
+* [跃迁：化学系女生的工程师之路](https://mp.weixin.qq.com/s/a6P3_Y0QGtKoq3kwqMQ7pw)
+* [Okhttp缓存源码分析以及自定义缓存实现 ](https://mp.weixin.qq.com/s/LP9neqTlGHrcUXlHhal_oA)
+* [岁末年初想换工作？别忘了算清这几笔钱！](https://mp.weixin.qq.com/s/VCa8Ov752HMfWx0wMklqsQ)
+* [这是一份全面 & 详细 的RxJava操作符 使用攻略 ](https://mp.weixin.qq.com/s/2vDZ7h6SL-LR7n3FR6OMrw)
+* [开放下载！《阿里巴巴Android开发手册》正式发布 ](https://mp.weixin.qq.com/s/ihqqkwsGOCjzQ-pwdcTULw)
+* [速度收藏！《阿里技术参考图册》发布，公开600页技术全景图 ](https://mp.weixin.qq.com/s/RN4meCDPa0yJCDeDVcM01A)
+
 项目不在多,在于你自己对知识点的领悟
 
 <br/>
