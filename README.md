@@ -13,7 +13,7 @@
 
 
 ### 项目截图
-<a href="./art/main1.jpg"><img src="./art/main1.jpg" width="40%"/></a><img height="0" width="8px"/><a href="./art/main2.jpg"><img src="./art/main2.jpg" width="40%"/></a><a href="./art/main3.jpg"><img src="./art/main3.jpg" width="40%"/></a>
+<a href="./art/main1.jpg"><img src="./art/main1.jpg" width="30%"/></a><img height="0" width="8px"/><a href="./art/main2.jpg"><img src="./art/main2.jpg" width="30%"/></a><a href="./art/main3.jpg"><img src="./art/main3.jpg" width="30%"/></a>
 
 App体验地址：
 
