@@ -17,6 +17,7 @@ import com.yueyue.glidedemo.module.chapter_4.Chapter4_Fragment;
 import com.yueyue.glidedemo.module.chapter_5.Chapter5_Fragment;
 import com.yueyue.glidedemo.module.chapter_6.Chapter6_Fragment;
 import com.yueyue.glidedemo.module.chapter_7.Chapter7_Fragment;
+import com.yueyue.glidedemo.module.chapter_8.Chapter8_Fragment;
 
 import java.util.ArrayList;
 
@@ -31,7 +32,7 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.view_pager)
     ViewPager viewPager;
 
-    private ArrayList<BaseFragment> fragmentList = new ArrayList<BaseFragment>(6) {{
+    private ArrayList<BaseFragment> fragmentList = new ArrayList<BaseFragment>(8) {{
         add(Chapter1_Fragment.launch());
         add(Chapter2_Fragment.launch());
         add(Chapter3_Fragment.launch());
@@ -39,6 +40,7 @@ public class MainActivity extends BaseActivity {
         add(Chapter5_Fragment.launch());
         add(Chapter6_Fragment.launch());
         add(Chapter7_Fragment.launch());
+        add(Chapter8_Fragment.launch());
     }};
 
 

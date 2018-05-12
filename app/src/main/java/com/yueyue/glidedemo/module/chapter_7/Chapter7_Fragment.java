@@ -20,8 +20,8 @@ import butterknife.OnClick;
 
 /**
  * author : yueyue on 2018/4/21 20:53
- * desc   : Android图片加载框架最全解析（六），探究Glide的自定义模块功能 - CSDN博客
- * <p> https://blog.csdn.net/guolin_blog/article/details/78179422</p>
+ * desc   : Android图片加载框架最全解析（七），实现带进度的Glide图片加载功能 - CSDN博客
+ * <p> https://blog.csdn.net/guolin_blog/article/details/78357251</p>
  */
 public class Chapter7_Fragment extends BaseFragment {
 

@@ -35,4 +35,7 @@
     <string name="glide_module">GlideModule</string>
     <string name="warm_tip_chapter6">GlideModule按钮遵守的是Glide3自定义模块规则,需要开启麻烦前往AndroidManifest开启测试,测试Chapter3时候要关闭GlideModule再测试</string>
     <string name="glide3_progress">Glide3Progress</string>
+    <string name="api_source_chapter81">* <b>Android图片加载框架最全解析（八），带你全面了解Glide 4的用法 - CSDN博客  :</b> \n  https://blog.csdn.net/guolin_blog/article/details/78582548 </string>
+    <string name="api_source_chapter82">* <b>Glide4.0使用浅解 - 简书   :</b>   https://www.jianshu.com/p/ab97d6bda8ec </string>
+    <string name="api_source_chapter83">* <b>Glide4.0集成及使用注意事项 - 简书   :</b>   https://www.jianshu.com/p/f1f17f816d1d </string>
 </resources>
