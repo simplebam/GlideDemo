@@ -91,6 +91,9 @@ App体验地址：
 * 时间戳
   * 定义:[程序员的日常：时间戳和时区的故事| 编程派 | Coding Python ](http://codingpy.com/article/programmer-daily-story-about-timestamp-and-timezone/)
   * [JAVA获取时间戳，哪个更快 - 潇湘客 - ITeye博客 ](http://tangmingjie2009.iteye.com/blog/1543166)
+* fiddler4使用教程
+  * [fiddler4使用教程 - CSDN博客 ](https://blog.csdn.net/chaoyu168/article/details/51065644)
+  * 这里的ip地址可以使用cmd命令的"ipconfig"查询到的"IPv4 地址"
 
 
 ### 项目中用到的框架
@@ -285,4 +288,7 @@ App体验地址：
           at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:880)
           at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:770)
   ```
-
+* 开发中出现小米4c无法安装测试的软件,捣鼓了很久都搞不了,之后在博客:[androiod studio小米真机调试不能安装应用问题解决 - CSDN博客 ](https://blog.csdn.net/qq_31796651/article/details/78084182)
+  找到了问题的所在,就是我的手机关闭了"USB安装"这个选项,喜欢经常使用小米手机内置的
+  安全中心优化系统的朋友们注意啦,安全中心优化系统包括了关闭开发者选项、关闭USB调试
+  以及禁止USB安装的。（开发者选项中包括了USB调试以及USB安装两个选项按钮。）

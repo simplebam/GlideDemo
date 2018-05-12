@@ -18,21 +18,20 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_my_circle_crop"
+                android:id="@+id/btn_my_glide_module"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:layout_weight="2"
+                android:layout_weight="1.5"
                 android:background="@color/color_d6d7d7"
                 android:padding="5dp"
-                android:text="@string/my_circle_crop"
+                android:text="@string/my_glide_module"
                 android:textAllCaps="false"
                 android:textColor="@color/color_000000"
                 android:textSize="16sp"
                 tools:ignore="ButtonStyle"/>
 
             <Button
-                android:layout_marginRight="10dp"
                 android:id="@+id/btn_blur_transformations"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -45,42 +44,27 @@
                 android:textSize="16sp"
                 tools:ignore="ButtonStyle"/>
 
-            <Button
-                android:layout_marginRight="10dp"
-                android:id="@+id/btn_grayscale_transformations"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/color_d6d7d7"
-                android:padding="5dp"
-                android:text="@string/grayscale_transformations"
-                android:textAllCaps="false"
-                android:textColor="@color/color_000000"
-                android:textSize="16sp"
-                tools:ignore="ButtonStyle"/>
-
-            <Button
-                android:id="@+id/btn_combination_transformations"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.2"
-                android:background="@color/color_d6d7d7"
-                android:padding="5dp"
-                android:text="@string/combination_transformations"
-                android:textAllCaps="false"
-                android:textColor="@color/color_000000"
-                android:textSize="16sp"
-                tools:ignore="ButtonStyle"/>
-
         </LinearLayout>
 
 
         <ImageView
             android:id="@+id/iv_image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_marginTop="10dp"
             android:background="@android:color/transparent"
             android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:background="@color/color_d6d7d7"
+            android:textAllCaps="false"
+            android:text="@string/warm_tip_chapter6"
+            android:textColor="@color/color_000000"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
+
 </android.support.v4.widget.SwipeRefreshLayout>

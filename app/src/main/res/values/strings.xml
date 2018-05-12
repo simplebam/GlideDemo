@@ -14,7 +14,7 @@
 
     <string name="api_source_chapter2">* <b>Android图片加载框架最全解析（二），从源码的角度理解Glide的执行流程 - CSDN博客 :</b>   https://blog.csdn.net/guolin_blog/article/details/53939176 </string>
     <string name="api_tip_chapter3">由于七牛云的链接比较特殊,不仅需要消去参数token的影响,还需要消去参数e(时间戳)的影响,看不懂替换的小伙伴可以看看郭霖先生的先: <b>Android图片加载框架最全解析（三），深入探究Glide的缓存机制 - CSDN博客  :</b> \n https://blog.csdn.net/guolin_blog/article/details/54895665 </string>
-    <string name="dialog_chapter2">虽然Glide仅仅是\n Glide.with(this) \n&#160;&#160;&#160;&#160;.load(url) \n&#160;&#160;&#160;&#160;.into(imageView);\n 但Glide在背后帮我们默默执行了成吨的工作。(我查到的英文资料是用tons of work来进行形容的，因此我觉得这里使用成吨来形容更加贴切一些。)</string>
+    <string name="dialog_chapter2">虽然Glide仅仅是\n Glide.with(this) \n&#160;&#160;&#160;&#160;.load(glideUrl) \n&#160;&#160;&#160;&#160;.into(imageView);\n 但Glide在背后帮我们默默执行了成吨的工作。(我查到的英文资料是用tons of work来进行形容的，因此我觉得这里使用成吨来形容更加贴切一些。)</string>
     <string name="tip">提示</string>
     <string name="title_complete">总结</string>
     <string name="sure">确认</string>
@@ -32,4 +32,6 @@
     <string name="blur_transformations">模糊化</string>
     <string name="grayscale_transformations">黑白化</string>
     <string name="combination_transformations">组合变换</string>
+    <string name="my_glide_module">MyGlideModule</string>
+    <string name="warm_tip_chapter6">因为chapter_6这里的GlideModule是全局使用的,所以暂时关闭了该GlideModule以免影响其他地方,需要开启麻烦前往AndroidManifest开启测试</string>
 </resources>

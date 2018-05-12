@@ -15,6 +15,7 @@ import com.yueyue.glidedemo.module.chapter_2.Chapter2_Fragment;
 import com.yueyue.glidedemo.module.chapter_3.Chapter3_Fragment;
 import com.yueyue.glidedemo.module.chapter_4.Chapter4_Fragment;
 import com.yueyue.glidedemo.module.chapter_5.Chapter5_Fragment;
+import com.yueyue.glidedemo.module.chapter_6.Chapter6_Fragment;
 
 import java.util.ArrayList;
 
@@ -35,6 +36,7 @@ public class MainActivity extends BaseActivity {
         add(Chapter3_Fragment.launch());
         add(Chapter4_Fragment.launch());
         add(Chapter5_Fragment.launch());
+        add(Chapter6_Fragment.launch());
     }};
 
 
@@ -56,7 +58,7 @@ public class MainActivity extends BaseActivity {
         setToolbarTitle(getString(R.string.app_name));
 
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar !=null) {
+        if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(false);
         }
     }
