@@ -39,9 +39,6 @@ public class Chapter6_Fragment extends BaseFragment {
     ImageView mIvImage;
     @BindView(R.id.btn_glide_module)
     Button mBtnGlideModule;
-//    @BindView(R.id.btn_blur_transformations)
-//    Button mBtnBlurTransformations;
-
 
     @OnClick(R.id.btn_glide_module)
     void myGlideModule() {
@@ -69,28 +66,6 @@ public class Chapter6_Fragment extends BaseFragment {
         mCompositeDisposable.add(disposable);
 
     }
-
-//    @OnClick(R.id.btn_blur_transformations)
-//    void blurTransformation() {
-//        changeSwipeRefreshState(true);
-//
-//        Context context = getContext() == null ? App.getContext() : getContext();
-//
-//        //模糊化
-//        RequestOptions options = RequestOptions
-//                .bitmapTransform(new BlurTransformation(10))
-//                .placeholder(R.drawable.placeholder)
-//                .error(R.drawable.error);
-//        Glide.with(context)
-//                .load(R.drawable.ying_default)
-//                .apply(options)
-//                .into(mIvImage);
-//
-//        ToastUtil.showShort(TAG + "模糊化成功");
-//        changeSwipeRefreshState(false);
-//    }
-
-
 
 
     private void changeSwipeRefreshState(boolean swipeRefresh) {

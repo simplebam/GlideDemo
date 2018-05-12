@@ -12,40 +12,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/btn_glide_progress"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btn_glide3_progress"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1.5"
-                android:background="@color/color_d6d7d7"
-                android:padding="5dp"
-                android:text="@string/glide3_progress"
-                android:textAllCaps="false"
-                android:textColor="@color/color_000000"
-                android:textSize="16sp"
-                tools:ignore="ButtonStyle"/>
-
-            <Button
-                android:id="@+id/btn_blur_transformations"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/color_d6d7d7"
-                android:padding="5dp"
-                android:text="@string/blur_transformations"
-                android:textAllCaps="false"
-                android:textColor="@color/color_000000"
-                android:textSize="16sp"
-                tools:ignore="ButtonStyle"/>
-
-        </LinearLayout>
-
+            android:layout_marginRight="10dp"
+            android:background="@color/color_d6d7d7"
+            android:padding="5dp"
+            android:text="@string/glide3_progress"
+            android:textAllCaps="false"
+            android:textColor="@color/color_000000"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle"/>
 
         <ImageView
             android:id="@+id/iv_image"
