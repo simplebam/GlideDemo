@@ -18,14 +18,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_glide_module"
+                android:id="@+id/btn_glide3_progress"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1.5"
                 android:background="@color/color_d6d7d7"
                 android:padding="5dp"
-                android:text="@string/glide_module"
+                android:text="@string/glide3_progress"
                 android:textAllCaps="false"
                 android:textColor="@color/color_000000"
                 android:textSize="16sp"

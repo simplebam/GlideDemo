@@ -11,7 +11,6 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
-import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.request.RequestOptions;
 import com.yueyue.glidedemo.R;
 import com.yueyue.glidedemo.base.App;
@@ -65,8 +64,7 @@ public class Chapter3_Fragment extends BaseFragment {
                                     .placeholder(R.drawable.placeholder)
                                     .error(R.drawable.error);
 
-                            GlideUrl glideUrl = new MyGlideUrl(url);
-                            Glide.with(context).load(glideUrl).apply(options).into(mIvImage);
+                            Glide.with(context).load(new MyGlideUrl(url)).apply(options).into(mIvImage);
 
                             getGlideFileSize();
 
@@ -85,6 +83,7 @@ public class Chapter3_Fragment extends BaseFragment {
     private String getQiNiuImageUrl() {
         //下载凭证 - 七牛开发者中心 https://developer.qiniu.com/kodo/manual/1202/download-token
         String baseUrl = "http://p8hz8s7pk.bkt.clouddn.com/qiniu_test.png";
+        //http://p8hz8s7pk.bkt.clouddn.com/qiniu_test.png
 
         //JAVA获取时间戳，哪个更快 - 潇湘客 - ITeye博客 http://tangmingjie2009.iteye.com/blog/1543166
         long e = System.currentTimeMillis();

@@ -16,9 +16,14 @@
         android:theme="@style/AppTheme">
 
         <!--Glide3.0配置的做法-->
-        <meta-data
+        <!--这个为chapter_6文件夹的-->
+<!--        <meta-data
             android:name="com.yueyue.glidedemo.module.chapter_6.MyGlideModule"
-            android:value="GlideModule"/>
+            android:value="GlideModule"/>-->
+        <!--这个为chapter_7文件夹的-->
+     <!--   <meta-data
+            android:name="com.yueyue.glidedemo.module.chapter_7.MyGlideModule"
+            android:value="GlideModule"/>-->
 
         <activity android:name=".MainActivity">
             <intent-filter>

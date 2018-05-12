@@ -32,6 +32,7 @@
     <string name="blur_transformations">模糊化</string>
     <string name="grayscale_transformations">黑白化</string>
     <string name="combination_transformations">组合变换</string>
-    <string name="my_glide_module">MyGlideModule</string>
-    <string name="warm_tip_chapter6">因为chapter_6这里的GlideModule是全局使用的,所以暂时关闭了该GlideModule以免影响其他地方,需要开启麻烦前往AndroidManifest开启测试</string>
+    <string name="glide_module">GlideModule</string>
+    <string name="warm_tip_chapter6">GlideModule按钮遵守的是Glide3自定义模块规则,需要开启麻烦前往AndroidManifest开启测试,测试Chapter3时候要关闭GlideModule再测试</string>
+    <string name="glide3_progress">Glide3Progress</string>
 </resources>

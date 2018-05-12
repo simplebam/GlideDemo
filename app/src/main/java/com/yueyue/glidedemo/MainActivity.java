@@ -16,6 +16,7 @@ import com.yueyue.glidedemo.module.chapter_3.Chapter3_Fragment;
 import com.yueyue.glidedemo.module.chapter_4.Chapter4_Fragment;
 import com.yueyue.glidedemo.module.chapter_5.Chapter5_Fragment;
 import com.yueyue.glidedemo.module.chapter_6.Chapter6_Fragment;
+import com.yueyue.glidedemo.module.chapter_7.Chapter7_Fragment;
 
 import java.util.ArrayList;
 
@@ -37,6 +38,7 @@ public class MainActivity extends BaseActivity {
         add(Chapter4_Fragment.launch());
         add(Chapter5_Fragment.launch());
         add(Chapter6_Fragment.launch());
+        add(Chapter7_Fragment.launch());
     }};
 
 
@@ -95,8 +97,6 @@ public class MainActivity extends BaseActivity {
                         return getString(R.string.title_chapter7);
                     case 7:
                         return getString(R.string.title_chapter8);
-                    case 8:
-                        return getString(R.string.title_chapter9);
                     default:
                         return getString(R.string.title_chapter1);
                 }

@@ -23,7 +23,9 @@ App体验地址：
 * [simplebam/RxJavaDemo 本教程基于 RxJava2 实践练习Demo ](https://github.com/simplebam/RxJavaDemo)
 * [Google推荐的图片加载库Glide介绍 - 泡在网上的日子 ](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0327/2650.html)
 * [Java获取必应每日一图教程 - CSDN博客 ](https://blog.csdn.net/simplebam/article/details/72819547)
-
+* [我们要不要上线「个人app」 ？-玩Android - wanandroid.com ](http://www.wanandroid.com/blog/show/2127)
+* 根据郭神第七篇Glide文章做的:[crystalDf/GuoLin-Blog-20171026-GlideProgressTest ](https://github.com/crystalDf/GuoLin-Blog-20171026-GlideProgressTest)
+  ,该项目存在的Bug:使用wifi网络加载不了图片,需要使用3g/4g网络
 项目不在多,在于你自己对知识点的领悟
 
 <br/>

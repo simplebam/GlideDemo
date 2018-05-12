@@ -94,6 +94,9 @@ App体验地址：
 * fiddler4使用教程
   * [fiddler4使用教程 - CSDN博客 ](https://blog.csdn.net/chaoyu168/article/details/51065644)
   * 这里的ip地址可以使用cmd命令的"ipconfig"查询到的"IPv4 地址"
+* 使用 Channel 或者 okio 提升读写能力
+  * Okio:[大概是最完全的Okio源码解析文章 - 简书 ](https://www.jianshu.com/p/f033a64539a1)
+  * Channel:[通俗编程——白话 NIO 之 Channel - 后端 - 掘金 ](https://juejin.im/entry/57a4aac3a633bd00603e83e5)
 
 
 ### 项目中用到的框架
