@@ -1,6 +1,7 @@
 # GlideDemo
 本项目主要以郭霖先生的 [Android图片加载框架最全解析（一），Glide的基本用法 - CSDN博客 ](https://blog.csdn.net/guolin_blog/article/details/53759439?utm_source=tuicool&utm_medium=referral)
 这一系列的 Glide 文章为基础的Demo
+* Glide官方中文文档:[Glide v4 : 快速高效的Android图片加载库 ](https://muyangmin.github.io/glide-docs-cn/)
 * 辅助文章:[Glide4.0使用浅解 - 简书 ](https://www.jianshu.com/p/ab97d6bda8ec)
 * 辅助源码文章:[【两篇就懂系列】Glide源码分析之加载图片流程(1/2) - 简书 ](https://www.jianshu.com/p/3bb4977ceb83)
 * 辅助源码文章:[深入理解Glide | Jiantao ](https://yangjiantao.github.io/2017/10/25/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Glide/#more)
